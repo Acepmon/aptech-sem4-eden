@@ -1,0 +1,25 @@
+<?php
+$con = mysql_connect("localhost", "root", "123");
+mysql_select_db("gogo", $con);
+mysql_query("set charset utf8");
+$ano = $_GET['info'];
+$mus = mysql_query("select * from musics where music_album_id=$ano");
+echo "<div class='leftSec' style='height: " . (299 + mysql_num_rows($mus) * 60) ."px'>";
+echo "<img src=\"albums/$ano.jpg\" style='width: 100%; margin-left: 0%;'/>";
+$no = 1;
+while($muno = mysql_fetch_array($mus)){
+	if($no % 2 == 0){$col= 555; $col2 = 'FFF';}else{$col = 222; $col2 = 333;}
+	echo "<div style='background-color: #$col; height; 50px;'>";
+	echo "$no. $muno[1]<audio controls style='width: 100%; margin-left: 0%; margin-top: 10px; margin-bottom: 5px; background-color: #$col2;'><source src=\"musics/$muno[0].mp3\" type=\"audio/mpeg\"></audio></div>";
+	$no++;
+}
+echo "</div>
+<div class=\"about\">";
+if($ano != null){
+	$album = mysql_fetch_array(mysql_query("select * from albums WHERE album_id=$ano"));
+	$artist = mysql_fetch_array(mysql_query("select * from artist WHERE artist_id=$ano"));
+	echo "Artist Name: $artist[1]<br>Album Name: $album[1]<br>About Artist: $artist[2]";
+}
+echo "</div>
+	<div class=\"leftSec\" style=\"height: 400px; background-color: blue;\"></div>";
+?>

@@ -1,0 +1,42 @@
+
+#profile {
+    position: relative;
+    float: right;
+    margin-top: -50px;
+}
+#profile #loggedin {
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px #2d2c3f;
+    height: auto;
+    padding: 6px;
+}
+#profile .profile_column {
+	float: left;
+    width: auto;
+    height: 55px;
+}
+#profile h1 {
+    color: black;
+    font-family: helios, arial;
+    font-weight: 100;
+    font-size: 18px;
+    margin-left: 5px;
+}
+#profile .profile_column a {
+    color: #00aeef;
+    text-decoration: none;
+    font-family: helios, arial;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 5px;
+}
+#profile .profile_column a:hover {
+    text-decoration: underline;
+}
+#profile img {
+    border-radius: 40px;
+    width: 55px;
+    height: 55px;
+}
+

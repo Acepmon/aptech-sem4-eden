@@ -1,0 +1,139 @@
+/* 
+    Created on : Aug 16, 2014, 3:59:05 AM
+    Author     : acep
+*/
+
+#categories {
+    width: 180px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ececec;
+    float: left;
+}
+#categories > header {
+    padding: 5px;
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c509e;
+    border-bottom: 1px solid #ececec;
+}
+#categories > nav {
+    padding: 10px;
+}
+#categories > nav li:first-child {
+    margin-top: 0px;
+}
+#categories > nav li {
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    list-style: none;
+    height: auto;
+}
+#categories > nav li a {
+    color: #8ba3b4;
+    width: 100px;
+    text-decoration: none;
+    font-family: helios, arial;
+    font-weight: 100;
+    font-size: 13px;
+    word-break: break-all;
+    text-transform: capitalize;
+}
+#categories > nav li a:hover {
+    color: #00aeef;
+    text-decoration: underline;
+}
+#categories > nav li a.active {
+    color: #00aeef;
+}
+#categories > nav li span {
+    float: right;
+    height: auto;
+    color: #8ba3b4;
+    text-decoration: none;
+    font-family: helios, arial;
+    font-weight: 100;
+    font-size: 13px;
+    word-break: break-all;
+}
+
+#list {
+    width: 805px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ececec;
+    float: right;
+}
+#list > header {
+    padding: 5px;
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c509e;
+    border-bottom: 1px solid #ececec;
+    text-transform: capitalize;
+}
+#list > header a {
+    float: right;
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #00aeef;
+}
+#list > header a:hover {
+    text-decoration: underline;
+}
+#list > section {
+    padding: 10px;
+}
+#list > section h1 {
+    color: red;
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: 100;
+}
+#list > section article {
+    float: left;
+    width: 175px;
+    height: 330px;
+    margin: 10px;
+}
+#list > section article .item_poster img {
+    width: 175px;
+    height: 260px;
+}
+#list > section article .item_title {
+    margin-top: 5px;
+}
+#list > section article .item_title a {
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c509e;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+#list > section article .item_title a:hover {
+    text-decoration: underline;
+}
+#list > section article .item_length span {
+    font-family: helios, arial;
+    font-size: 12px;
+    font-weight: 100;
+    color: #8ba3b4;
+}
+#list > section article .item_trailer a {
+    font-family: helios, arial;
+    font-size: 12px;
+    font-weight: 100;
+    text-decoration: none;
+}
+#list > section article .item_trailer a:hover {
+    text-decoration: underline;
+}
+#list > section > div {
+    clear: both;
+}

@@ -1,0 +1,40 @@
+table{
+	margin-top: 20px;
+	width: 100%;
+}
+table .tr{
+	font-size: 12px;
+	height: 130px;
+}
+table .tr .blue{
+	color: #00aeef;
+	font-size: 18px;
+}
+.hor{
+	height: 1px;
+	background-color: #CCC;
+}
+#total{
+	margin-right: 20px;
+	color: #0C509e;
+	font-size: 26px;
+}
+table .tr td input{
+	width:50px;
+	height: 25px;
+	padding-left: 5px;
+	border-radius: 0;
+	border: 1px solid #CCC;
+}
+table tr td input[type=submit]{
+	border: 0px;
+	width: 150px;
+	height: 40px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: #FFF;
+	background-color: #00AeeF;
+}
+table tr td input[type=submit]:hover{
+	background-color: #33BEF2;
+}

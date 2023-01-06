@@ -1,0 +1,154 @@
+body{
+    	margin: 0; 
+    	padding: 0em;
+	background-color: #C4C4C4;
+}
+.big{
+	margin: 0 0 0 0;
+	position: relative;
+	padding-top: 0px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: #FF63CC;
+	color: black;
+}
+.big .onSkin{
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #FF33CC;
+}
+.big .skin{
+	position: relative;
+
+	background-color: #E000CC;
+	text-align: center;
+	font: Arial;
+	font-size: 26px;
+	color: #999999;
+}
+.big .underSkin{
+	position: relative;
+	height: 20px;
+	background-color: white;
+}
+.big .underSkin2{
+	position: relative;
+	height: 12px;
+	background-color: #FF99CC;
+}
+.big .footer{
+	position: relative;
+
+	font: Arial;
+	color: #E8E8E8;
+}
+
+.big .skin ul li{
+	display: inline-block;
+	margin: 20px 0 20px 0;
+	width: 150px;
+	height: 150px;
+
+	font: Arial;
+	font-size: 18px;
+	color: #E000CC;
+}
+.big .skin ul li:hover{
+	background-color: #E000CC;
+	color: white;
+	-moz-transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-webkit-transition: background-color 0.2s;
+}
+
+/*
+.big .skin ul li:nth-child(1){
+	background-color: #555;/*#99FFCC;*
+}
+.big .skin ul li:nth-child(2){
+	background-color: #555;/*#FF99CC;*
+}
+.big .skin ul li:nth-child(3){
+	background-color: #555;/*#FFCC99;*
+}
+.big .skin ul li:nth-child(4){
+	background-color: #555/*#CC99FF;*
+}
+.big .skin ul li:nth-child(5){
+	background-color: #555/*#CCFF99;*
+}
+.big .skin ul li:nth-child(6){
+	background-color: #555;/*#99CCFF;*
+}
+*/
+.big .skin ul li:nth-child(1):hover{
+	background-color: #00FFCC;
+}
+.big .skin ul li:nth-child(2):hover{
+	background-color: #FF00CC;
+}
+.big .skin ul li:nth-child(3):hover{
+	background-color: #FFCC00;
+}
+.big .skin ul li:nth-child(4):hover{
+	background-color: #CC00FF;
+}
+.big .skin ul li:nth-child(5):hover{
+	background-color: #CCFF00;
+}
+.big .skin ul li:nth-child(6):hover{
+	background-color: #00CCFF;
+}
+
+
+.big .skin ul li img{
+	padding-top: 10px;
+	display: inline-block;
+	position: relative;
+	width: 120px;
+	height: 120px;
+}
+
+.big .logoContainer{
+	width: 100%;
+	height: 400px;
+	background-color: #FF99CC;
+}
+.big .logo{
+	padding-top: 50px;
+	width: 50%;
+	margin: 0 auto;
+	background-color: #FF99CC;
+}
+.big .logo img{
+	width: 100%;
+
+	background-color: white;
+	border: 2px solid #999999;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px #A8A8A8;
+}
+.big .logo .input{
+	padding: 0 5px 0 5px;
+	margin-top: 10px;
+	width: 85%;
+	height: 30px;
+	background-color: white;
+	border: 4px solid #FF9900;
+}
+.big .logo .but{
+	padding: 2px 5px 2px 5px;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 10%;
+	height: 38px;
+
+	border: 2px solid #999999;
+	background: -moz-linear-gradient(top, white, #D8D8D8); /* For Firefox 3.6 to 15 */
+
+	color: #FF9900;
+	font: Arial;
+	font-size: 16px;
+}

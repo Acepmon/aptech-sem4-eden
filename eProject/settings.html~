@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>What's up?</title>
+		<link href="style/sheet.css" type="text/css" rel="stylesheet">
+		<link href="style/sheetSet.css" type="text/css" rel="stylesheet">
+    <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+</head>
+	<body>
+		<?php
+			#Checking Logged in
+			session_start();
+			$_SESSION['user'] = "username";
+			$user = $_SESSION['user'];
+            echo $user;
+			if($user != null){
+				#header("Location: login.php");
+			}
+		?>
+		<div class="big">
+			<div class="header">
+				<div class="left">
+					<img src='images/gogo.png' /><span>tweet</span>
+				</div>
+						<table>
+							<tr><td id="one"><a href="mail-index.php?view=last">&nbsp;Last&nbsp;</a></td>
+									<td id="two"><a href="mail-index.php?view=pop">&nbsp;Top&nbsp;</a></td>
+									<td id="three"><a href="mail-index.php?view=top">&nbsp;Pop&nbsp;</a></td></tr>
+						</table>
+				<div class="right"><ul>
+					<li><a href="#"><img src='images/message.png'></img></a>
+						<ul><li>
+<form action="compose.php">
+<textarea name="tweet" width="150"></textarea>
+<input type="submit" value="Compose"/>
+</form>
+						</li></ul>
+					</li>
+					<li><a href="index.php?user=<?php echo $me[0]?>"><img src="images/<?php echo $me[11]?>.png"></img></a>
+						<ul>
+							<li><a href="index.php?user=<?php echo $me[0]?>">Profile</a></li>
+							<li><a href="setting.php">Settings</a></li>
+							<li><a href="index.php?logout=true">Sign out</a></li>
+						</ul>
+				</li>
+				</ul></div>
+			</div>
+			<!--Body Section-->
+			<div class="bodySection">
+            	<div class="setPro">
+                	<center><img src="images/me.png" width="400" height="400"><br>Tuvshinbayar Dashdavaa</center>
+            	</div><center>
+            	<div class="settingSection">
+            	    <form name="form1" method="post" action="">
+            	      <table width="100%">
+            	        <tr>
+            	          <td>First Name:</td>
+            	          <td><input type="text" name="textfield" id="textfield"></td>
+            	          <td>Last Name:</td>
+            	          <td><input type="text" name="textfield2" id="textfield2"></td>
+          	          </tr>
+            	        <tr>
+            	          <td>Image URL:</td>
+            	          <td><input type="text" name="textfield3" id="textfield3"></td>
+            	          <td>Location:</td>
+            	          <td><input type="text" name="textfield4" id="textfield4"></td>
+          	          </tr>
+            	        <tr>
+            	          <td>eMail:</td>
+            	          <td><input type="text" name="textfield6" id="textfield6"></td>
+            	          <td>&nbsp;</td>
+            	          <td>&nbsp;</td>
+          	          </tr>
+            	        <tr>
+            	          <td> Job:</td>
+            	          <td><select name="select" id="select">
+            	            <option value="Mechanic">Mechanic</option>
+            	            <option value="Programmer">Programmer</option>
+            	            <option value="Student">Student</option>
+            	            <option value="Web Developer">Web Developer</option>
+          	            </select>
+at
+<label for="textfield5"></label>
+<input type="text" name="textfield5" id="textfield5"></td>
+            	          <td>Birth Date:</td>
+            	          <td><select name="select2" id="select2">
+            	            <option value="Jan">Jan</option>
+            	            <option value="Feb">Feb</option>
+            	            <option value="Mar">Mar</option>
+            	            <option value="Apr">Apr</option>
+            	            <option value="May">May</option>
+            	            <option value="Jun">Jun</option>
+            	            <option value="Jul">Jul</option>
+            	            <option value="Aug">Aug</option>
+            	            <option value="Sep">Sep</option>
+            	            <option value="Oct">Oct</option>
+            	            <option value="Nov">Nov</option>
+            	            <option value="Dec">Dec</option>
+          	            </select>
+                            <label for="select3"></label>
+                            <select name="select3" id="select3">
+                            </select>
+                            <label for="select4"></label>
+                            <select name="select4" id="select4">
+                          </select></td>
+          	          </tr>
+                      <tr>
+	                      <td>Password: </td>
+    	                  <td><input type="password" name="textfield7" id="textfield7"></td>
+        	              <td>Re-Type Password: </td>
+            	          <td><input type="password" name="textfield8" id="textfield8"></td>
+                      </tr>
+                      <tr>
+                      <td colspan="4"><center><input type="submit" name="button" id="button" value="Change"></center></td>
+                      </tr>
+                      </table>
+           	      </form>
+           	    </div>
+          	</center>
+            <center><span style="font-size: 26px;">Tweets</span></center>
+            <div class="setTweet">
+              <table width="100%" border="1">
+                <tr>
+                  <th>ID</th>
+                  <th>Tweet</th>
+                  <th>Tweet Date</th>
+                  <th>Likes</th>
+                  <th>Shares</th>
+                  <th>Comments</th>
+                  <th>x</th>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+			</div>
+		  </div>
+    </div>
+	</body>
+</html>

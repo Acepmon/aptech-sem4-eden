@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Log in</title>
+<link href="style/loginSheet.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<?php
+$var = $_COOKIE['user'];
+if($var != null){
+	header("Location: index.php");
+}
+?>
+<div class='loginSection'>
+<center><span style='font-size: 34px; font-weight: bold;'>GoGo</span></center>
+<form action="login.php" method=get>
+	<input type="text" name="uname" placeholder="Username.." class="input"><br>
+	<input type="password" name="pword" placeholder="Password.." class="input"><br>
+	<input type="submit" value="Login" class="but">
+</form>
+</div>
+<?php
+$uname = $_GET['uname'];
+$pword = $_GET['pword'];
+if($uname != null && $pword != null){
+$con = mysql_connect("localhost", "root", "123");
+mysql_select_db("gogo", $con);
+$query = mysql_query("SELECT * FROM user WHERE username = '$uname' AND password = '$pword'", $con);
+$rownum = mysql_num_rows($query);
+if($rownum != 0){
+	$names = mysql_fetch_array($query);
+	$na = $names[0];
+	setcookie("user", $na);
+	header("Location: index.php");
+} else{
+	echo "Wrong username or password";
+}
+}
+?>
+</body>
+</html>

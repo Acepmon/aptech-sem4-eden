@@ -1,0 +1,78 @@
+<?php
+
+$con = mysqli_connect('localhost', 'root', '', 'gogo') or die(mysql_error());
+mysqli_query($con, 'set charset utf8');
+$input = $_POST['input'];
+$sel = $_POST['select'];
+
+if ($input != '') {    
+    
+    $result = mysqli_query($con, 'select * from accounts where '.$sel.' like "%' . $input . '%";');
+    
+    echo '<table border=0 cellspacing="3" id="admin_table">';
+    echo '<tr>
+	<th>ID</th>
+	<th>Firstname</th>
+	<th>Lastname</th>
+	<th>Username</th>
+	<th>Hash</th>
+	<th>Email</th>
+	<th>Profile Picture</th>
+	<th>Address</th>
+	<th>Birthdate</th>
+	<th>Intro</th>	
+	<th>Actions</th>	
+	</tr>';
+
+    while ($row = mysqli_fetch_array($result)) {
+        echo '<tr>';
+        echo '<td>'.$row['acc_id'].'</td>'
+                . '<td>'.$row['firstname'].'</td>'
+                . '<td>'.$row['lastname'].'</td>'
+                . '<td>'.$row['username'].'</td>'
+                . '<td>'.$row['hash'].'</td>'
+                . '<td>'.$row['email'].'</td>'
+                . '<td>'.$row['profile_pic'].'</td>'
+		. '<td>'.$row['address'].'</td>'
+		. '<td>'.$row['birth_date'].'</td>'
+		. '<td>'.$row['intro'].'</td>'
+                . '<td><button onclick="editAction('.$row['acc_id'].', 0)">Edit</button>&nbsp;<button onclick="deleteAction('.$row['acc_id'].',0)">Delete</button></td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+} else {
+    $result = mysqli_query($con, 'select * from accounts;');
+
+    echo '<table border=0 cellspacing="3" id="admin_table">';
+    echo '<tr>
+	<th>ID</th>
+	<th>Firstname</th>
+	<th>Lastname</th>
+	<th>Username</th>
+	<th>Hash</th>
+	<th>Email</th>
+	<th>Profile Picture</th>
+	<th>Address</th>
+	<th>Birthdate</th>
+	<th>Intro</th>
+	<th>Actions</th>	
+	</tr>';
+
+    while ($row = mysqli_fetch_array($result)) {
+        echo '<tr>';
+        echo '<td>'.$row['acc_id'].'</td>'
+                . '<td>'.$row['firstname'].'</td>'
+                . '<td>'.$row['lastname'].'</td>'
+                . '<td>'.$row['username'].'</td>'
+                . '<td>'.$row['hash'].'</td>'
+                . '<td>'.$row['email'].'</td>'
+                . '<td>'.$row['profile_pic'].'</td>'
+		. '<td>'.$row['address'].'</td>'
+		. '<td>'.$row['birth_date'].'</td>'
+		. '<td>'.$row['intro'].'</td>'
+                . '<td><button onclick="editAction('.$row['acc_id'].', 0)">Edit</button>&nbsp;<button onclick="deleteAction('.$row['acc_id'].',0)">Delete</button></td>';
+        echo '</tr>';
+    }
+}
+echo '</table>';
+mysqli_close($con);

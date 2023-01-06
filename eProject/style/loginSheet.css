@@ -1,0 +1,66 @@
+.bigBody{
+	position: absolute;
+	margin-top: -17px;
+	margin-left: -8px;
+	width: 100%;
+	height: 101%;
+	background-size: 100% 100%;
+	background-image:url('images/walls3.jpg');
+	background-repeat: no-repeat;
+}
+.bigBody .loginSection{
+	position: relative;
+	background-color: #CCC;
+	border: 1px solid #333;
+	border-radius: 5px;
+	margin-top: 40px;
+	float: left;
+	margin-left: 50px;
+	padding-top: 5px;
+	width: 245px;
+}
+.loginSection .but{
+	width: 220px;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 11px;
+	border: 0px;
+	box-shadow: 4px 3px 5px #AAA;
+	border-radius: 5px;
+	background-color: #39F;
+}
+.loginSection .input{
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-left: 3px;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 225px;
+	height: 30px;
+}
+.loginSection .input:focus{
+	border: 2px solid #39F;
+	border-radius: 5px;
+}
+.loginSection .sinput{
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-left: 3px;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 225px;
+	height: 30px;
+}
+.loginSection .sinput:focus{
+	border: 2px solid #29A629;
+	border-radius: 5px;
+}
+.loginSection .select{	
+	margin-top: 5px;
+}
+.loginSection .select:focus{
+	border-radius: 5px;
+	border-color: #29A629;
+}

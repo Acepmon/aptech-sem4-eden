@@ -1,0 +1,200 @@
+/* 
+    Created on : Aug 11, 2014, 1:23:31 PM
+    Author     : acep
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #f6f7f8;
+}
+#admin_head {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    z-index: 3;
+}
+#admin_logo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    background: #01AEF0;
+}
+#admin_logo img {
+    margin: 5px;
+    width: 175px;
+    height: auto;
+}
+#admin_top {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: none repeat scroll 0% 0% #0C509E;
+    border-bottom: 1px #0A4180 solid;
+    box-shadow: 0px 1px 2px 0px #000000;
+    z-index: 0;
+}
+#admin_top ul {
+    position: relative;
+}
+#admin_top ul li {
+    width: 80px;
+    height: 24px;
+    padding-top: 6px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-left: 1px #0C509E solid;
+    border-right: 1px #0C509E solid;
+}
+#admin_top ul li.active {
+    background: #00aeef;
+    border-left: 1px #009DD7 solid;
+    border-right: 1px #009DD7 solid;
+}
+#admin_top ul li:hover {
+    background: #00aeef;
+    border-left: 1px #009DD7 solid;
+    border-right: 1px #009DD7 solid;
+}
+#admin_top ul li a {
+    font-family: helios,arial;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#admin_menu {
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 1px;
+    z-index: 1;
+}
+#admin_menu ul {
+    list-style: none;
+}
+#admin_menu ul li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+#admin_menu ul li:hover {
+    background: #00aeef;    
+    box-shadow: 0px 0px -2px 0px #6a6a70;
+}
+#admin_menu ul li:hover a {
+    color: white;
+}
+#admin_menu ul li.panelActive {
+    background: #00aeef;
+}
+#admin_menu ul li.panelActive a {
+    color: white;
+}
+#admin_menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: helios,arial; 
+    font-size: 14px;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    color:#0c509e;
+}
+#admin_content {
+    position: relative;
+    float: left;
+    width: 90%;
+    margin-bottom: 10px;
+    min-height: 150px;
+    max-height: auto;
+    background: #f7f7f7;
+    z-index: 1;
+    box-shadow: -1px 1px 2px 0px #2d2c3f;
+}
+#admin_content div {
+    margin: 10px;
+    height: auto;
+}
+.admin_tabs {display: none;}
+
+
+#search_input {
+    width: 250px;
+    height: 25px;
+    font-weight: bold;
+    font-family: helios, arial;
+    font-size: 13px;
+    padding-left: 5px;
+    margin-left: 3px;
+}
+#search_select {
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    font-family: helios, arial;
+    font-size: 13px;
+}
+#search_select option {
+    font-weight: bold;
+    font-family: helios, arial;
+    font-size: 13px;
+}
+#admin_table {
+    margin-top: 10px;
+}
+#admin_table th {
+    font-weight: bold;
+    font-family: helios, arial;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px #d5d5d5 solid;
+}
+#admin_table td {
+    padding: 5px;
+    font-weight: 100;
+    font-family: helios, arial;
+    font-size: 13px;
+    text-align: center;
+    border: 1px #d5d5d5 solid;
+    word-break: break-all;
+    text-transformation: justify;
+}
+#admin_table td textarea {
+    width: 350px;
+    height: 150px;
+}
+#admin_table td input[type=file], input[type=text], input[type=password], input[type=email], select {
+    width: 350px;
+}
+#admin_table td button, input[type=submit], input[type=reset], input[type=button] {
+    color: gray;
+    padding: 3px;
+    font-weight: bold;
+    font-family: helios, arial;
+    font-size: 13px;
+}
+#admin_table td button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
+    color: black;
+}
+#admin_content .search_results {
+    position: relative;
+    left: -10px;
+}
+
+#search_results {
+    position: relative;
+    margin: 0px;
+    left: -10px;
+}
+#account_edit {
+    position: relative;
+    margin: 0px;
+}

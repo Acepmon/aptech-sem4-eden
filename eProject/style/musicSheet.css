@@ -1,0 +1,139 @@
+body{
+	margin: 0;
+	padding: 0em;
+	background-color: #666;/*#00BFFF;/*#FFFFFF;*/
+}
+#bigBody{
+	margin: 115px 0 0 0;
+	position: absolute;
+	padding-top: 0px;
+	width: 100%;
+	height: auto;
+	border: none;
+}
+#Header{
+	background-color: #333;
+}
+#bigBody #Leftior{
+	margin: 0 0 0 0;
+	position: relative;
+	float: left;
+	width: 25%;
+	
+	text-align: justify;
+	background-color: #111;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	color: white;
+}
+#bigBody #Rightior{
+	position: relative;
+	width: 75%;
+	float: right;
+	height: 100%;
+}
+#bigBody #Rightior .sorter{
+	padding-top: 8px;
+	width: 100%;
+	height: 25px;
+
+	text-align: right;
+	color: white;
+	font-size: 20px;
+}
+#bigBody #Rightior .sorter .genres{
+	position: relative;
+	float: right;
+	width: 160px;
+	height: 30px;
+	margin-right: 15px;
+
+	background-color: #444;
+	border-radius: 5px;
+}
+#bigBody #Rightior .sorter .genres ul{
+	position: relative;
+	margin-top: -24px;
+	padding-right: 12px;
+	display: none;
+
+	border-radius: 5px;
+	background-color: #444;
+	z-index: 99;
+}
+#bigBody #Rightior .sorter .genres ul li{
+	display: block;
+}
+#bigBody #Rightior .sorter .genres:hover ul{
+	display: block;
+}
+#bigBody #Rightior .sorter a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+#bigBody #Rightior .sorter a:hover{
+	text-decoration: underline;
+}
+#bigBody #Rightior .sorter table{
+	position: relative;
+	float: right;
+	margin-right: 15px;
+	margin-top: -5px;
+	width: 80px;
+	height: 30px;
+
+	border: 1px solid #999;
+	background-color: #999;
+	border-radius: 30px;
+}
+#bigBody #Rightior .sorter table tr td{
+	border: 1px solid #999;
+	background-color: #999;
+	border-radius: 30px;
+}
+#bigBody #Rightior .sorter table tr td a{
+	color: #444;
+}
+#bigBody #Rightior .sorter table tr td a:hover{
+	text-decoration: none;
+}
+#bigBody #Rightior .squares{
+	position: relative;
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.squa{
+	position: relative;
+	width: 33%;
+}
+#bigBody #Rightior .squares .squa{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 0px;
+	background-size: 100% 100%;
+}
+#bigBody #Rightior .squares .squa .gray{
+	position: relative;
+	margin: 0 0 0 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+}
+#bigBody #Rightior .squares .squa:hover .gray{
+	-moz-transition: opacity .3s ease-in-out;
+	opacity: 0.7;
+}
+#bigBody #Rightior .squares .squa .gray img{
+	position: relative;
+	width: 50%;
+	height: 50%;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#bigBody #Rightior .squares .squa:hover .gray img{
+	display: block;
+}

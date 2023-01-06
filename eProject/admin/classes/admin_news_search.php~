@@ -1,0 +1,49 @@
+<?php
+
+$con = mysqli_connect('www.site.com', 'root', 'acep123', 'cloud') or die(mysql_error());
+mysqli_query($con, 'set charset utf8');
+$input = $_POST['input'];
+$sel = $_POST['select'];
+
+echo '<table border=0 cellspacing="3" id="admin_table">';
+echo '<tr>'
+ . '<th>News ID</th>'
+ . '<th>Type</th>'
+ . '<th style="word-wrap: break-word; width: 100px;">Title</th>'
+ . '<th>News</th>'
+ . '<th>Time</th>'
+ . '<th>Name</th>'
+ . '<th>Actions</th>'
+ . '</tr>';
+
+if ($input != '') {
+    $result = mysqli_query($con, 'select * from news where ' . $sel . ' like "%' . $input . '%";');
+
+    while ($row = mysqli_fetch_array($result)) {
+        echo '<tr>'
+        . '<td>' . $row[0] . '</td>'
+        . '<td>' . $row[1] . '</td>'
+        . '<td>' . $row[2] . '</td>'
+        . '<td>' . $row[3] . '</td>'
+        . '<td>' . $row[4] . '</td>'
+        . '<td>' . $row[    5] . '</td>'
+        . '<td><button onclick="editAction(' . $row[0] . ', 50)">Edit</button>&nbsp;<button onclick="deleteAction(' . $row[0] . ', 50)">Delete</button></td>'
+        . '</tr>';
+    }
+} else {
+    $result = mysqli_query($con, 'select * from news');
+
+    while ($row = mysqli_fetch_array($result)) {
+        echo '<tr>'
+        . '<td>' . $row[0] . '</td>'
+        . '<td>' . $row[1] . '</td>'
+        . '<td>' . $row[2] . '</td>'
+        . '<td>' . $row[3] . '</td>'
+        . '<td>' . $row[4] . '</td>'
+        . '<td>' . $row[5] . '</td>'
+        . '<td><button onclick="editAction(' . $row[0] . ', 50)">Edit</button>&nbsp;<button onclick="deleteAction(' . $row[0] . ', 50)">Delete</button></td>'
+        . '</tr>';
+    }
+}
+echo '</table>';
+mysqli_close($con);

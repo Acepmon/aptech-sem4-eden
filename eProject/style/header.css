@@ -1,0 +1,71 @@
+.head{
+	width: 100%;
+	height: 69px;
+	background-color: white;
+}
+.head > .head-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 89%;
+	height: 69px;
+	float: top;
+}
+.head > .head-container > .logo{
+	float: left;
+	width: 134px;
+	margin-left: 7px;
+}
+.head > .head-container > .logo > a > img{
+	height: 50px;
+}
+.head > .head-container > form{
+	padding-top: 4px;
+	margin-top: 16px;
+}
+.head > .head-container > form > input[type=submit]{
+	font-family: helios,arial;
+	font-weight: bold; 
+	position: absolute;
+	color: white;
+	background-image: url(../images/icons/search-icon.png);
+	background-size: 45px 45px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #00aeef;
+	border: none;
+	font-size: 15px;
+	width: 36px;
+	height: 35px;
+	cursor: pointer;
+}
+.head > .head-container > form > input[type=text]{
+	border: 2px solid #00aeef;
+	padding-left: 10px;
+	height: 35px;
+	width: 45%;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #0C509E;
+}
+.head > .head-container > form .styled-select {
+	width: 10%;
+	position: relative;
+	bottom: 2px;
+	left: 10px;
+	padding-left: 10px;
+	padding-top: 4px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #0C509E;
+}
+.head > .head-container > form .styled-select > option {
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: #F6F7F8;
+	font-size: 14px;
+	font-weight: 100;
+	color: #0C509E;
+}
+

@@ -1,0 +1,304 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 1, 2014, 5:15:34 AM
+    Author     : acep
+*/
+
+#file_manager {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: #e1e3e6;
+}
+#fm_menu {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    background: #0c509e;
+    border-radius: 0px;
+    box-shadow: 0px 1px 3px 0px #000000;
+    z-index: 1;
+}
+#fm_menu_left {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+}
+#fm_menu_left img {
+    position: relative;
+    float: left;
+    border: none;
+    width: auto;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+#fm_menu_left h1 {
+    position: relative;
+    width: auto;
+    height: 20%;
+    font-size: 90%;
+    font-family: helios,arial;
+    font-weight: bold;
+    font-style: italic;
+    float: top;
+    color: white;
+    left: -15px;
+    top: 5px;
+}
+#fm_menu_left a {
+    position: relative;
+    float: top;
+    width: auto;
+    height: 13%;
+    font-size: 70%;
+    font-family: helios,arial;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #bababa;
+    left: -15px;
+    bottom: 8px;
+}
+#fm_menu_left a:hover {
+    color: white;
+}
+#fm_menu_center {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+    box-shadow: -1px 0px 3px 0px #d3d4d8;
+}
+#fm_menu_center input {
+    float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+    border: 1px lightgray solid;
+    height: 55%;
+    width: 50%;
+    padding-left: 5px;
+}
+#fm_menu_center > a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    margin-left: 2%;
+}
+#fm_menu_center > a > img {
+    width: auto;
+    height: 80%;
+    float: right;
+    margin-top: 6%;
+    border: 1px #0c509e solid;
+}
+#fm_menu_center > a > img:hover {
+    border: 1px lightgray dotted;
+}
+#fm_menu_right {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 100%;
+    box-shadow: -1px 0px 3px 0px #d3d4d8;
+}
+#fm_menu_right #fscreen_off {
+    display: block;
+}
+#fm_menu_right #fscreen_on {
+    display: block;
+}
+#fm_menu_right > a {
+    text-decoration: none;
+    color: white;
+}
+#fm_menu_right > a > b {
+    font-size: 14px;
+    float: right;
+    margin-top: 7%;
+    margin-right: 5%;
+    border: 1px #0c509e solid;
+}
+#fm_menu_right > a > img {
+    width: auto;
+    height: 80%;
+    margin-top: 2%;
+    margin-right: 2%;
+    float: right;
+    border: 1px #0c509e solid;
+}
+#fm_menu_right > a > img:hover {
+    border: 1px gray dotted;
+}
+
+#fm_nav {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 92%;
+    background: linear-gradient(#f6f7f8, #efefef);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-style: scrollbar;
+}
+#fm_nav a {
+    text-decoration: none;
+    color: white;
+}
+#fm_nav > ul {
+    width: 100%;
+    margin-top: 13px;
+}
+#fm_nav > ul > li {
+    padding-top: 3px;
+    background: #1a61b9;
+    padding: 2px;
+}
+#fm_nav > ul > li > span {
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+    font-size: 105%;
+}
+#fm_nav > ul > li > ul {
+    background: #1a61b9;
+}
+#fm_nav li.hasSub > ul > li {
+    height: 25px;
+    padding: 5px;
+}
+#fm_nav li.hasSub > ul > li:hover {
+    background: #00aeef;
+}
+#fm_nav li.hasSub > ul > li > a > span {
+    float: left;
+    margin-top: 4px;
+}
+#fm_nav li.hasSub > ul > li img {
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+#fm_content {
+    display: none;
+    position: relative;
+    float: left;
+    width: 85%;
+    height: 92%;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-style: panner;
+    overflow-wrap:break-word;
+    box-shadow: -1px 0px 3px 0px #d3d4d8;
+}
+.fm_entity {
+    display: block;
+    margin: 10px;
+    width: 10%;
+    height: 14%;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    cursor: pointer;
+}
+.fm_entity img {
+    width: 50%;
+    height: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fm_entity span {
+    width: 100%;
+    font-family: Arial;
+    font-size: 14px;
+}
+.fm_entity:hover {
+    border: 1px black dotted;
+}
+
+#fm_content_list {
+    display: none;
+    position: relative;
+    float: left;
+    width: 85%;
+    height: 92%;
+    padding: 0px;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-style: panner;
+    overflow-wrap:break-word;
+    box-shadow: -1px 0px 3px 0px #d3d4d8; 
+}
+#fm_content_list #fm_list_header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#fm_content_list #fm_list_header div {
+    display: inline-block;
+    text-align: left;
+    margin-left: -6px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: helios,arial;
+    font-size: 14px;
+    color: gray;
+    border: white 1px dotted;
+}
+#fm_content_list #fm_list_header div:hover {
+    color: black;
+}
+#fm_content_list #fm_list_header div:active {
+    border: lightgray 1px dotted;
+}
+#fm_content_list #fm_list_entity {
+    width: 100%;
+}
+#fm_content_list #fm_list_entity:hover {
+    background: #1a61b9;
+}
+#fm_content_list #fm_list_entity:hover div {
+    color: white;
+}
+#fm_content_list #fm_list_entity div {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+    top: 0;
+    clear: left;
+    border: white 1px hidden;
+    font-weight: 100;
+    font-family: helios,arial;
+    font-size: 14px;
+    color: #404040;
+}
+#fm_content_list #fm_list_entity div input[type=checkbox] {
+    text-align: center;
+}
+#fm_content_list #fm_list_entity div img {
+    width: auto;
+    height: 30px;
+}
+.list_check {
+    width: 4%;
+}
+.list_name {
+    width: 69%;
+}
+.list_size {
+    width: 10%;
+}
+.list_type {
+    width: 10%;
+}

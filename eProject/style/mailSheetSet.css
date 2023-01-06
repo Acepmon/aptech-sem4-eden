@@ -1,0 +1,40 @@
+.settingSection{
+	width: 90%;
+	height: 270px;
+	background-color: #FFF;
+	border: 1px solid #BFBFBF;
+	border-radius: 10px;
+	
+	font-weight: bold;
+}
+.setTweet{
+	background-color: #FFF;
+	border: 1px solid #BFBFBF;
+	border-radius: 10px;
+	
+	font-weight: bold;
+}
+.setPro{
+	position: relative;	
+	font-size: 26px;
+}
+.setPro img{
+	width: 150px;
+	height: 150px;
+	border-radius: 8px;
+}
+input[type=submit]{
+	margin-top: 5px;
+	position: relative;
+	width: 100px;
+	height: 30px;
+
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	background-color: #00A300;
+	font-size: 18px;
+	color: white;
+}
+input[type=submit]:hover{
+	background-color: #19BC19;
+}

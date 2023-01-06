@@ -1,0 +1,67 @@
+<?php
+	#Connecting to MySQL zooooooom. >~<
+header("Content-type: text/html; charset= utf-8");
+	$con = mysql_connect("localhost", "root", "");
+	mysql_select_db("gogo", $con);
+	mysql_query("set charset utf8");
+#Checking Logged in
+$user = $_COOKIE['user'];
+echo " <div class=header\">
+   <div class=\"top-nav\"> <!-- Shortcut links ends-->
+ 		<div class=\"top-container\">
+  		 <ul class=\"left\">
+			<li><a href=\"\">GOGO</a></li>
+			<li><a href=\"\">МЭДЭЭ</a></li>
+			<li><a href=\"\">Э-ШУУДАН</a></li>
+			<li><a href=\"\">КИНО</a></li>
+			<li><a href=\"\">ХӨГЖИМ</a></li>
+			<li class=\"active\"><a class=\"sel\" href=\"/\">Э-НОМ</a></li>
+		 </ul>
+		 <ul class=\"right\">
+			<li><a href=\"http://www.facebook.com\"><img src=\"images/icons/facebook.png\"/></a></li>
+			<li><a href=\"http://www.twitter.com\"><img src=\"images/icons/twitter.png\"/></a></li>
+			<li><a href=\"http://www.gmail.com\"><img src=\"images/icons/gmail.png\"/></a></li>
+			<li><a href=\"http://www.yahoo.com\"><img src=\"images/icons/yahoo.png\"/></a></li>
+			<li><a href=\"http://www.linkedin.com\"><img src=\"images/icons/linkedin.png\"/></a></li>
+			<li><a href=\"http://www.youtube.com\"><img src=\"images/icons/youtube.png\"/></a></li>
+		 </ul>
+  	</div>
+ 	</div> <!-- Shortcut links ends-->
+
+	<div class=\"head\"> <!-- logo search Interface-->
+  <div class=\"head-container\">
+   <div class=\"logo\">
+    <a href=\"\"><img src=\"images/icons/eden.png\"></a>
+   </div>
+   <form action=\"/\" method=\"GET\">
+    <select class='styled-select'>
+     <option>Бүгдээс</option>
+     <option>Мэдээ</option>
+     <option>Шуудан</option>
+     <option>Кино</option>
+     <option>Хөгжим</option>
+     <option>Ном</option>
+    </select>
+    <input type=\"text\" name=\"search\" placeholder=\" Хайх...\"/>
+    <input type=\"submit\" value='' />
+   </form>
+
+	<div class=\"login\">";
+$_COOKIE['user'] = 4;
+$user = $_COOKIE['user'];
+$adminMark = mysql_num_rows(mysql_query("select * from accounts where acc_id=$user"));
+if($adminMark != null){
+	#header("Location: http://www.eden.com/intro.php");
+}
+$me = mysql_fetch_array(mysql_query("select * from accounts where acc_id=$user"));
+echo "<table><tr><td>";
+echo "<center><img src=\"images/userIcons/$me[6].png\"></center>";
+echo "</td></tr><tr><td>";
+echo "$me[1] $me[2]";
+echo "</td></tr></table>";
+echo "</div>   
+
+  </div>
+ </div> <!-- logo search Interface ends-->
+ </div>";
+?>

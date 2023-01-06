@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Nuur</title>
+	<link href="style/indexCss.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<?php
+session_start();
+session_destroy();
+?>
+	<div class="Big">
+		<div class="logoContainer">
+		<div class="logo"><img src="/images/icon.png" height="200">
+			<form action="" method=get>
+				<input type="text" name="search" placeholder="Enter.." class="input">
+				<input type="submit" value="XaNx" class="but">
+			</form>
+		</div>
+		</div>
+		<div class="onSkin">
+		<div class="skin">
+			<ul>
+				<li><a href='#'><img src="images/news-2.png"></img></a><br>NEWS</li>
+				<li><a href='#'><img src="images/email-3.png"></a><br>e MAIL</li>
+				<li><a href='#'><img src="images/music-4.png"></a><br>MUSIC</li>
+				<li><a href='#'><img src="images/tv-5.png"></a><br>TV</li>
+				<li><a href='#'><img src="images/ebook-6.png"></a><br>e-Book</li>
+			</ul>
+		</div></div><div class="underSkin2">&nbsp;</div>
+		<div class="footer"><center>Developed by: On_your_eyes</center></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+* {
+margin: 0px;
+padding: 0px; 
+}
+/* Top menu css start */
+.newshead{
+	background-color: #333;
+	width: 100%;
+	height: auto;
+}
+.top-nav{
+	width: 100%
+	height: 27px;
+	background-color: #363738;
+	border-bottom:1px solid #e1e3e6;
+}
+.top-container{
+	width: 89%;
+	height: 27px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #363738;
+}
+.container .left li{
+	float: left;
+	display: block;
+}
+.left {display: inline-block;}
+.left li{display: inline-block;}
+.left li a{display: block;
+	font-family: helios,arial; 
+	font-size: 13px;
+	font-weight: bold; 
+	text-transform: uppercase; 
+	color:#BBB;
+	padding: 0 5px; 
+	line-height: 26px;
+	text-decoration: none;}
+.left li a.sel, .topnav li a:hover{color:#EEE;}
+.right{
+	display: inline-block; 
+	float: right;	
+	padding-right: 20px;
+}
+.right li{display: inline-block;}
+.right li a img{
+	padding-top: 3px;
+	width: 20px;
+	height: 20px;
+}
+/* Top menu css end */s
+.head{
+	width: 100%;
+	height: 69px;
+	background-color: #333;
+}
+.head > .head-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 89%;
+	height: 69px;
+	float: top;
+}
+.head > .head-container > .logo{
+	float: left;
+	width: 134px;
+	margin-left: 7px;
+}
+.head > .head-container > .logo > a > img{
+	height: 50px;
+}
+.head > .head-container > form{
+	padding-top: 4px;
+	margin-top: 16px;
+}
+.head > .head-container > form > input[type=submit]{
+	font-family: helios,arial;
+	font-weight: bold; 
+	position: absolute;
+	color: white;
+	background-image: url(../images/icons/search-icon.png);
+	background-size: 45px 45px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #EEE;
+	border: none;
+	font-size: 15px;
+	width: 36px;
+	height: 35px;
+	cursor: pointer;
+}
+.head > .head-container > form > input[type=text]{
+	border: 2px solid #EEE;
+	padding-left: 10px;
+	height: 35px;
+	width: 45%;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #BBB;
+}
+.head > .head-container > form .styled-select {
+	width: 10%;
+	position: relative;
+	bottom: 2px;
+	left: 10px;
+	padding-left: 10px;
+	padding-top: 4px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #BBB;
+}
+.head > .head-container > form .styled-select > option {
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: #363738;
+	font-size: 14px;
+	font-weight: 100;
+	color: #666;
+}
+* {
+margin: 0px;
+padding: 0px; 
+}
+/* Logo, search and exchange, weather, horoscope information start*/
+.head{
+	width: 100%;
+	height: 69px;
+	background-color: #333;
+}
+.head > .head-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 89%;
+	height: 69px;
+	float: top;
+}
+.head > .head-container > .logo{
+	float: left;
+	width: 134px;
+	margin-left: 7px;
+}
+.head > .head-container > .logo > a > img{
+	height: 50px;
+}
+.head > .head-container > form{
+	padding-top: 4px;
+	margin-top: 16px;
+}
+.head > .head-container > form > input[type=submit]{
+	font-family: helios,arial;
+	font-weight: bold; 
+	position: absolute;
+	color: white;
+	background-image: url(../images/icons/search-icon.png);
+	background-size: 45px 45px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #888;
+	border: none;
+	font-size: 15px;
+	width: 36px;
+	height: 35px;
+	cursor: pointer;
+}
+.head > .head-container > form > input[type=text]{
+	border: 2px solid #EEE;
+	padding-left: 10px;
+	height: 35px;
+	width: 45%;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #444;
+}
+.head > .head-container > form .styled-select {
+	display: none;
+	width: 10%;
+	position: relative;
+	bottom: 2px;
+	left: 10px;
+	padding-left: 10px;
+	padding-top: 4px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #444;
+}
+.head > .head-container > form .styled-select > option {
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: #F6F7F8;
+	font-size: 14px;
+	font-weight: 100;
+	color: #444;
+}
+#search_guess {
+	display: none;
+	background: white;
+	width: 556px; 
+	z-index: 3; 
+	position: absolute; 
+	margin-left: 150px; 
+	margin-top: 0px;
+	border: 2px solid #666; 
+	border-top: none;
+}
+#search_guess a {
+	text-decoration: none;
+}
+#search_guess div {
+	padding: 5px;
+	cursor: pointer; 
+}
+#search_guess div:hover {
+	background: #ebe7e7;
+}
+#search_guess div img {
+	width: 100px;
+	height: 60px;
+	vertical-align: text-top;
+}
+#search_guess div span {
+	height: 60px;
+	margin-left: 5px;
+	font-family: helios, arial;
+	font-size: 15px;
+	font-weight: bold;
+	color: #0C509E;
+}
+/* Logo, search and exchange, weather, horoscope information end*/
+

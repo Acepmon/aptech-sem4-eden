@@ -1,0 +1,37 @@
+<html>
+<?php
+header('Content-type: text/html; charset=utf-8');
+?>
+<body>
+<form action='' method=post>
+Author: <input type='text' name='a' />
+Torol: <input type='text' name='torol' />
+Title: <input type='text' name='title' /><br>
+Desc: <textarea name='news' style='width: 800px; height: 500px;'></textarea><br>
+Picture: <input type='text' name='pic' />
+Page: <input type='text' name='page' />
+Price: <input type='text' name='price' />
+<input type='submit' value='enter'>
+</form>
+</body>
+</html>
+<?php
+$a = $_POST['a'];
+$torol = $_POST['torol'];
+$title = $_POST['title'];
+$news = $_POST['news'];
+$pic = $_POST['pic'] . ".jpg";
+$page = $_POST['page'];
+$price = $_POST['price'];
+
+$con = mysql_connect("localhost", "root", "123");
+mysql_select_db("gogo", $con);
+mysql_query("set charset utf8");
+
+$wc = mysql_query("insert into books values(0, $a, '$torol', '$title', '$news', '$pic', $page, '$price')");
+if($wc){
+	echo "Successfully inserted";
+} else {
+	echo $wc . " <--";
+}
+?>

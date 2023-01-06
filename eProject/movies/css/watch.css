@@ -1,0 +1,112 @@
+/* 
+    Created on : Aug 16, 2014, 7:15:38 AM
+    Author     : acep
+*/
+#watch {
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ececec;
+    padding: 10px;
+}
+#watch > #media {
+    width: 690px;
+    height: 400px;
+    float: left;
+    background: black;
+}
+#watch > #media video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#watch > #desc {
+    float: right;
+    width: 280px;
+    height: auto;
+    font-family: helios, arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+#watch #desc div {
+    padding: 5px;
+}
+#watch #mov-title {
+    font-family: helios, arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c509e;
+    text-transform: capitalize;
+}
+#watch #mov-type a {
+    color: #8ba3b4;
+    text-decoration: none;
+    font-family: helios, arial;
+    font-weight: 100;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+#watch #mov-type a:hover {
+    color: #00aeef;
+    text-decoration: underline;
+}
+#watch #mov-trailer a {
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+} #watch #mov-trailer a:hover {text-decoration: underline;}
+#watch #mov-desc {
+    font-family: helios, arial;
+    font-size: 13px;
+    font-weight: 100;
+}
+#related {
+    clear: both;
+    margin-top: 10px;
+    border: 1px solid #ececec;
+}
+#related > header {
+    border-bottom: 1px solid #ececec;
+    padding: 8px;
+    font-family: helios, arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c509e;
+    text-transform: capitalize;
+}
+#related > section {
+    padding: 10px 10px 10px 10px;
+}
+#related > section article {
+    background: #e1d9d9;
+    width: 170px;
+    height: 240px;
+    float: left;
+    border: 1px solid white;
+    margin: 9px;
+}
+#related > section article:hover {
+    border: 1px solid gray;
+}
+#related > section #short_article {
+    background: #e1d9d9;
+    width: 170px;
+    height: 110px;
+    float: left;
+    border: 1px solid white;
+    margin: 9px;
+}
+#related > section #short_article img {
+    border: none;
+    width: 173px;
+    height: 110px;
+}
+#related > section article img {
+    border: none;
+    width: 173px;
+    height: 240px;
+}
+#related > div {
+    clear: both;
+    padding: 5px;
+}

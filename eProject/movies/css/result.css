@@ -1,0 +1,67 @@
+/* 
+    Created on : Aug 16, 2014, 5:08:44 AM
+    Author     : acep
+*/
+
+#result {
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ececec;
+    padding-bottom: 10px;
+}
+#result > header{
+    padding: 5px;
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: 100;
+    color: #585858;
+    border-bottom: 1px solid #ececec;
+}
+#result > header b {
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c509e;
+}
+
+#result > section article {
+    float: left;
+    width: 175px;
+    margin: 10px;
+}
+#result > section article .item_poster img {
+    width: 175px;
+    height: 260px;
+}
+#result > section article .item_title {
+    margin-top: 5px;
+}
+#result > section article .item_title a {
+    font-family: helios, arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c509e;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+#result > section article .item_title a:hover {
+    text-decoration: underline;
+}
+#result > section article .item_length span {
+    font-family: helios, arial;
+    font-size: 12px;
+    font-weight: 100;
+    color: #8ba3b4;
+}
+#result > section article .item_trailer a {
+    font-family: helios, arial;
+    font-size: 12px;
+    font-weight: 100;
+    text-decoration: none;
+}
+#result > section article .item_trailer a:hover {
+    text-decoration: underline;
+}
+#result > section > div {
+    clear: both;
+}

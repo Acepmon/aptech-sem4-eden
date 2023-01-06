@@ -1,0 +1,330 @@
+<html>
+<head>
+<title>Mongolian Portal Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style/newsCssHeader.css" type="text/css" rel="stylesheet"/>
+<link href="style/newsCssBody.css" type="text/css" rel="stylesheet"/>
+<link href="style/newsCssFooter.css" type="text/css" rel="stylesheet"/>
+<link href="style/login.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/menuFix.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.core.js"></script>
+<script type="text/javascript" src="js/jssor.utils.js"></script>
+<script type="text/javascript" src="js/jssor.slider.js"></script>
+<script>
+ jQuery(document).ready(function ($) {
+  var options = {
+   $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+   $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+    $AutoCenter: 0,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+   }
+  };
+  var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+ });
+</script>
+<?php
+ 
+?>
+</head>
+<body>
+<div class="newshead"> <!-- Header-->
+
+ <div class="topnav"> <!-- Shortcut links ends-->
+  <div class="top-container">
+   <ul class="left">
+    <li><a href="">EDEN</a></li>
+    <li class="active"><a class="sel" href="/">МЭДЭЭ</a></li>
+    <li><a href="">Э-ШУУДАН</a></li>
+    <li><a href="">КИНО</a></li>
+    <li><a href="">ХӨГЖИМ</a></li>
+    <li><a href="">Э-НОМ</a></li>
+   </ul>
+   <ul class="right">
+    <li><a href="http://www.facebook.com"><img src="images/icons/facebook.png"/></a></li>
+    <li><a href="http://www.twitter.com"><img src="images/icons/twitter.png"/></a></li>
+    <li><a href="http://www.gmail.com"><img src="images/icons/gmail.png"/></a></li>
+    <li><a href="http://www.yahoo.com"><img src="images/icons/yahoo.png"/></a></li>
+    <li><a href="http://www.linkedin.com"><img src="images/icons/linkedin.png"/></a></li>
+    <li><a href="http://www.youtube.com"><img src="images/icons/youtube.png"/></a></li>
+   </ul>
+  </div>
+ </div> <!-- Shortcut links ends-->
+
+ <div class="head"> <!-- Search Interface-->
+  <div class="head-container">
+   <div class="logo">
+    <a href=""><img src="images/icons/eden.png"></a>
+   </div>
+   <form action="/" method="GET">
+    <select class='styled-select'>
+     <option value="мэдээ">Мэдээ</option>
+     <option value="кино">Кино</option>
+     <option value="хөгжим">Хөгжим</option>
+     <option value="ном">Ном</option>
+    </select>
+    <input type="text" name="search" placeholder=" Хайх..."/>
+    <input type="submit" value='' />
+   </form>
+<div class="login">
+<?php
+if($user != null){
+	$adminMark = mysql_num_rows(mysql_query("SELECT * FROM accounts WHERE user_id=$user && admin <> null"));
+	if($adminMark != null){
+		header("Location: http://www.eden.com/intro.php");
+	}
+	$me = mysql_fetch_array(mysqL_query("SELECT * FROM user WHERE user_id=$user"));
+	echo "<table><tr><td>";
+	echo "<center><img src=\"images/icons/$me[11].png\"/></center>";
+	echo "</td></tr></table>";
+	echo "$me[1] $me[2]";
+	echo "</td></tr></table>";
+}
+?>
+</div>         
+  </div>
+ </div> <!-- Search Interface ends-->
+ 
+ <div class="menu"> <!-- Menu container -->
+  <div class="menu-container">
+    <ul>
+     <li><a href="/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+     <li><a href="menus.php?type=Нийгэм"><span>Нийгэм</span></a></li>
+     <li><a href="menus.php?type=Улс төр"><span>Улс төр</span></a></li>
+     <li><a href="menus.php?type=Эдийн засаг"><span>Эдийн засаг</span></a></li>
+     <li><a href="menus.php?type=Дэлхийд"><span>Дэлхийд</span></a></li>
+     <li><a href="menus.php?type=Нийтлэл"><span>Нийтлэл</span></a></li>
+     <li><a href="menus.php?type=Спорт"><span>Спорт</span></a></li>
+     <li class="has-sub"><a href="/"><span>Бусад</span></a>
+      <ul>
+       <li><a href='menus.php?type=Боловсрол'><span>Боловсрол</span></a></li>
+       <li><a href='menus.php?type=Эрүүл мэнд'><span>Эрүүл мэнд</span></a></li>
+       <li><a href='menus.php?type=Соёл урлаг'><span>Соёл урлаг</span></a></li>
+       <li><a href='menus.php?type=Монгол'><span>Монгол</span></a></li>
+       <li><a href='menus.php?type=Технологи'><span>Технологи</span></a></li>
+       <li><a href='menus.php?type=Бизнес'><span>Бизнес</span></a></li>
+      </ul>
+     </li>
+     <li style="float:right"><a href=""><span>Нэвтрэх</span></a></li>
+    </ul>    
+  </div>
+ </div> <!-- Menu container ends-->
+ 
+</div> <!-- Header ends -->
+
+<div class='body'> <!-- Body -->
+ <div class='gap'>&nbsp;</div> <!-- Gap before news column -->
+ <div class='news'> <!-- News Column -->
+
+<?php
+ $type = $_GET['type'];
+ echo "<h3>$type</h3>";
+ $nine = 9;
+
+ $connection = mysql_connect("localhost","root", "");
+ mysql_set_charset('utf8',$connection);
+ $database = mysql_select_db("gogo");
+
+$num=$_POST['num'];
+if($num == null){$num = 1;}
+ $all = mysql_num_rows(mysql_query("select * from news where TYPE='$type'"));
+
+ $newsT = mysql_query("select * from news WHERE TYPE='$type' order by m_id DESC");
+ $char_limit = 822;
+$j = $all;
+ while($row = mysql_fetch_array($newsT)){
+if($j>$all - $num*$nine && $j <= $all - ($num-1)*$nine){
+ $article1_desc = " $row[MEDEE]";
+ $result = substr($article1_desc, 0, $char_limit) . "...";
+  echo "<div class='nws'>";
+   echo "<h4>$row[TITLE]</h4>";
+   echo "<img src='images/articles/article$row[M_ID].jpg' />";
+   echo "<p>$result</p>";
+	 $tsag = getDate();
+list($date, $time) = explode(" ", $row['TIME']);
+list($year, $mon, $day) = explode("-", $date);
+list($h, $min, $sec) = explode(":", $time);
+
+if($tsag["year"] == $year){
+	          if($tsag["mday"] == $day){
+		          if($tsag["hours"] == $h){
+			          if($tsag["minutes"] == $min){
+		             echo "<span>" . ($tsag["seconds"] - $sec) . "s ago</span>";
+			          } else {
+            		 echo "<span>" . ($tsag["minutes"] - $min) . "min ago</span>";
+			          }
+		          } else {
+			          $timeago = (($tsag["hours"] - $h) * 60) + ($tsag["minutes"] - $min);
+			          $tsagago = intval($timeago/60);
+			          $minago = $timeago%60;
+								if($tsagago != 0){
+									if($minago != 0){
+										echo "<span>$tsagago цаг $minago минутын өмнө</span>";		
+									}else{
+										echo "<span>$tsagago цагын өмнө</span>";
+									}
+								}else{
+										echo "<span>$minago минутын өмнө</span>";
+								}
+		          }
+	          } else {
+             $day++;
+                if($day == $tsag["mday"]){
+                    echo "<span>өчигдөр</span>";
+                }else{
+                  $day++;
+                  if($day == $tsag["mday"]){
+                    echo "<span>уржигдар</span>";
+                  }else{
+                    echo "<span>$date</span>";
+                  }                
+                }
+	          }
+          }
+   echo "<a href='article1.php?id=$row[M_ID]'>Дэлгэрэнгүй...</a>";
+  echo "</div>";
+}
+$j--;
+ }
+echo "<center>";
+$val = $all/$nine;
+if($all % $nine != 0){
+$val++;
+}
+for($i=1; $i<=$val; $i++){
+echo "<form method=post style='float: left'>";
+echo "<input type='hidden' name='num' value='$i'/>";
+	echo "<input type='submit' class='but' value='$i' style='background-color: #01AEF0; width: 35px; height: 25px; border: 0px; border-radius: 2px; margin-left: 3px; color: white;";
+	if($num==$i){
+		echo "background-color:#0C509E;";
+	} 
+	echo "'/></form>";
+}
+echo "</center>";
+?>
+ </div> <!-- News Column ends -->
+  
+ <div class='ad'> <!-- Advertisement Column -->
+   
+  <a href=''>
+   <div class='adver'>
+   <img src='images/ads/ad1.jpeg' />
+   </div>
+  </a>
+  
+  <div class='adver'>
+   <h4>Шинэ</h4>
+   <div class='scrollpane'>
+		<?php
+      $newsA = mysql_query("select * from news order by m_id desc");
+      while($rows = mysql_fetch_array($newsA)){
+			echo "<a href='article1.php?id=$rows[M_ID]' style='text-decoration: none; color:black'><div style='padding-bottom: 8px; width: 100%; min-height: 90px; max-height: auto; float: left; border-bottom: 1px lightgray solid;'>";
+     		echo "<div>";
+        echo "<img src='images/articles/article$rows[M_ID].jpg' style='width:37%; height: 13%; margin-top: 2%; float:left; padding-right: 8px;'/>";
+        echo "</div>";
+
+        echo "<div style='margin-top: 6px; height: 92px;'>";
+        echo "<div style='height: 85%; font-family: arial; font-size: 15px; float:top'>$rows[TITLE]</div>";
+        echo "<div style='height: 15%; font-size: 12px; color:#00AEEB'>";
+          list($date, $time) = explode(" ", $rows['TIME']);
+          list($year, $mon, $day) = explode("-", $date);
+          list($h, $min, $sec) = explode(":", $time);
+          
+          echo "<span>";
+          if($tsag["year"] == $year){
+	          if($tsag["mday"] == $day){
+		          if($tsag["hours"] == $h){
+			          if($tsag["minutes"] == $min){
+		             echo "" . ($tsag["seconds"] - $sec) . "s ago";
+			          } else {
+            		 echo "" . ($tsag["minutes"] - $min) . "min ago";
+			          }
+		          } else {
+			          $timeago = (($tsag["hours"] - $h) * 60) + ($tsag["minutes"] - $min);
+			          $tsagago = intval($timeago/60);
+			          $minago = $timeago%60;
+								if($tsagago != 0){
+									if($minago != 0){
+										echo "$tsagago цаг $minago минутын өмнө";		
+									}else{
+										echo "$tsagago цагын өмнө";
+									}
+								}else{
+										echo "$minago минутын өмнө";
+								}
+		          }
+	          } else {
+             $day++;
+                if($day == $tsag["mday"]){
+                    echo "өчигдөр";
+                }else{
+                  $day++;
+                  if($day == $tsag["mday"]){
+                    echo "уржигдар";
+                  }else{
+                    echo "<span>$date</span>";
+                  }                
+                }
+	          }
+          }
+          echo "</span>";
+          echo "<span style='float: right; padding-right: 0px; width: 120px; height: 18px;'>";
+          $countC = mysql_num_rows(mysql_query("select * from comments where M_ID=$rows[M_ID]"));
+          echo "$countC сэтгэгдэлтэй";
+          echo "</span>";       
+        echo "</div>";
+        echo "</div>";
+			echo "</div></a>";
+      }
+		?>
+   </div>
+  </div>
+   
+  <a href=''>
+   <div class='adver'><img src='images/ads/ad2.png' /></div>
+  </a>
+   
+  <a href=''>
+   <div class='adver'><img src='images/ads/ad3.jpg' /></div>
+  </a>
+   
+  <div class='adver'>
+   <h4>Header / Title</h4>
+   <div class='scrollpane'>
+    <p>amaadasdasdasdaasds<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>dkosasdasmdkoas</p>
+   </div>
+  </div>
+   
+ </div> <!-- Advertisement Column ends -->
+</div> <!-- Body ends-->
+
+<div class='footer'> <!-- Footer -->
+ <div class='content'>
+  
+  <img src='images/icons/eden-footer.png' alt='website name' />
+  
+  <ul>
+   <li>Website Name</li>
+   <li>@Copyright</li>
+   <li>Address</li>
+   <li>Contact information</li>
+  </ul>
+  
+  <ul>
+   <li>Social Network</li>
+   <li><a href=''>Facebook</a></li>
+   <li><a href=''>Twitter</a></li>
+   <li><a href=''>Yahoo</a></li>
+   <li><a href=''>Gmail</a></li>
+   <li><a href=''>Youtube</a></li>
+  </ul>
+  
+ </div>
+</div> <!-- Footer ends -->
+
+</body>
+</script>
+</html>

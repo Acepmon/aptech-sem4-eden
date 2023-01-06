@@ -1,0 +1,33 @@
+.footer {
+	background: #01AEF0;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	color: white;
+}
+.footer .content {
+	width: 90%;
+	margin-left: 4%;
+	padding: 20px;
+	min-height: 100px;
+}
+.footer .content img {
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.footer .content ul {
+	list-style: none;
+	font-size: 14px;
+	font-weight: 0;
+	width: 150px;
+	float: right;
+}
+.footer .content a {
+	text-decoration: none;
+	color: white;
+}
+.footer .content a:hover {
+	text-decoration: underline;
+}

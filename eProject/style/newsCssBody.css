@@ -1,0 +1,356 @@
+body {
+	background: white;
+}
+.body {
+	width: 100%;
+	padding-top: 0px;
+}
+.body > div {
+	position: inherit;
+	float: left;
+}
+.body .gap {
+	width: 5%;
+}
+.body .news {
+	background: white;
+	padding: 0px 10px 10px 10px;
+	width: 60%;
+	border-right: none;
+}
+.body .news .bigAdvertisement {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 300px;
+	z-index:0;
+	margin-top: 3px;
+}
+.body .news .bigAdvertisement > div {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	overflow: hidden;
+}
+.body .news > h4 {
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 19px;
+	color: white;
+	background-color: #0c509e;
+}
+.body .news > h3 {
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 19px;
+	color: #00AEEB;
+}
+.body .news .nws {
+	margin-bottom: 15px;
+	border-bottom: 1px #00AEEB solid;
+	padding: 5px;
+}
+.body .news .nws h4 {
+	text-align: left;
+	margin: 0px;
+	font-weight: 300;
+	font-size: 25px;
+	font-family: Arial;
+}
+.body .news .nws img {
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 200px;
+	height: 120px;
+	float: left;
+}
+.body .news .nws p {
+	font-family: Arial Mon;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+	padding-bottom: 5px;
+	width: 100%;
+	min-height: 135px;
+	max-height: 135px;
+	word-break: break-word;
+}
+.body .news .nws textarea {
+	position: relative;
+	overflow: hidden;
+	font: Droid Sans;
+	font-size: 13px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	width: 350px;
+	min-height: 120px;
+	max-height: 120px;
+	word-break: break-all;
+}
+.body .news .nws a {
+	font-family: helios, arial;
+	font-size: 15px;
+	padding-bottom:5px;
+	float: right;
+	text-decoration: none;
+	color: #00AEEB;
+}
+.body .news .nws a:hover {
+	color: #0c509e;
+}
+.body .news .nws span {
+	position: relative;
+	font-size: 12px;
+	font-weight: 100;
+	color: #00AEEB;
+}
+.body .news table {
+	width: 500px;
+	margin-top: 10px; 
+	margin-left: 10px;
+}
+.body .news table th {
+	font-weight: bold;
+	font-size: 13px;
+	color: black;
+	text-align: right;
+	padding: 5px;
+}
+.body .news table td {
+	text-align: left;
+	padding: 5px;
+}
+.body .news table span{
+	color: #0c509e;
+}
+.body .news table input {
+	padding-left: 5px;
+	height: 30px;
+}
+.body .news table input[type=text] {
+	width: 300px;
+	border: 1px solid #A6A6A6;
+}
+.body .news table select::-moz-focus-inner {
+	color: #0c509e;
+}
+.body .news table input[type=file]::-moz-focus-inner {
+	width: 100px;
+	font-size: 13px;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 3px 0px 3px 0px;
+	color: white;
+	background-color: #0c509e;
+	border: 0px;
+}
+.body .ad {
+	position: relative;	
+	background: white;
+	padding: 5px;
+	margin-left: 5px;
+	width: 25%;
+	height: auto;
+	border-bottom: none;
+}
+.body .ad .adver {
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+}
+.body .ad .adver ul{
+	width: 46%;
+	margin-top: 1%;
+	margin-left: 2%;
+	display: inline-table;
+	border: 1px solid #0c509e;
+	background-color: white;
+}
+.body .ad .adver ul li{
+	display: block;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-decoration: none;
+	border-bottom: 1px solid #0c509e;
+	padding: 5px 10px 5px 10px;
+}
+.body .ad .adver ul li:last-child{
+	border-bottom: none;
+}
+.body .ad .adver ul li a{
+	font-family: arial;
+	font-size: 14px;
+	text-decoration: none;
+	color: #8ba3b4;
+}
+.body .ad .adver h4 {
+	background: #0c509e;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+.body .ad .adver .scrollpane {
+	min-height: 100px;
+	max-height: 560px;
+	overflow: auto;
+}
+.body .ad .adver img {
+	width: 100%;
+	height: 250px;
+}
+.body .news .article {
+	margin-top: 10px;
+	border: 1px lightgray solid;
+	padding: 10px;
+	height: auto;
+}
+.body .news .article h4 {
+	text-align: left;
+	margin: 0px;
+	font-weight: 300;
+	font-size: 25px;
+	font-family: Arial;
+}
+.body .news .article .desc_image {
+	margin-top: 5px;
+	margin-right: 10px;
+	width: auto;
+	height: 220px;
+	float: left;
+}
+.body .news .article p {
+	font: Droid Sans;
+	font-size: 15px;
+	margin-top: 5px;
+	width: 100%;
+	min-height: 220px;
+	max-height: auto;
+	text-align: justify;
+}
+.body .news .article p img {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.body .news .article span {
+	font-size: 12px;
+	font-weight: 100;
+	color: #00AEEB;
+	float: right;
+}
+.body .news .article .back{
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+}
+.body .news .article .back .button{
+	float: left;
+	width: 20%;
+	height: 25	px;
+	margin-top: 10px;
+	content: "";
+	background-color: #0c509e;
+	background-image: url(../images/icons/arrow-left.png);
+	background-repeat: no-repeat;
+	background-size: 45px 45px;
+	background-position: 10% 50%;
+	text-align:center;
+	padding-top: 5px;
+}
+.body .news .article .back .button:hover {
+	background-color: #00AEEF;
+}
+.body .news .article .back .button {
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+.body .news .wcomment {
+	margin-top: 10px;
+	border: 1px lightgray solid;
+	padding: 10px;
+}
+.body .news .comments {
+	margin-top: 10px;
+	border: 1px lightgray solid;
+	padding: 10px;
+}
+.body .news .comments a {
+	text-decoration: none;
+}
+.body .news .comments a:hover {
+	text-decoration: underline;
+}
+.body .news .comments #hide {
+	color: #0c509e;
+	cursor: pointer;
+	display: block;
+}
+.body .news .comments #show {
+	color: #0c509e;
+	cursor: pointer;
+	display: none;
+}
+.body .news .comments #commentContainers {
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+	margin-top: 10px;
+}
+.body .news .comments .commentContainer table {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.body .news .comments .commentContainer td {
+	border: 1px lightgray solid;
+}
+.body .news .comments .commentContainer .comm {
+	width: 100%;
+}
+.body .news .comments .commentContainer img {
+	width: 100px;
+	height: 100px;
+	margin: 2px;
+	border: 0px;
+}
+.body .news .comments .commentContainer h5 {
+	text-align: center;
+	font-size: 15px;
+	margin-top: 5px;
+	margin-bottom: 1px;
+}
+.body .news .comments .commentContainer p {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+.body .news .vote{
+	margin-top: 20px;	
+}
+.body .news .vote h4{
+	width: 100%;
+	background-color: #0c509e;
+	color: white;
+}
+.body .news .vote .votenews img{
+	width: 15%;
+}
+.body .news .vote .votenews{
+	border:1px black solid;
+	margin-top: 10px;
+}
